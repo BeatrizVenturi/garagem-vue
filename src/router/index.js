@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import CategoriaView from "../views/CategoriaView.vue";
 import AcessorioView from "../views/AcessorioView.vue";
+import CorView from "../views/CorView.vue";
 
 
 import LoginView from "../views/LoginView.vue";
@@ -24,6 +25,16 @@ const router = createRouter({
       path: "/acessorios",
       name: "acessorios",
       component: AcessorioView,
+    },
+    {
+      path: "/cores",
+      name: "cores",
+      component: CorView,
+    },
+    {
+      path: "/marcas",
+      name: "maras",
+      component: CategoriaView,
     },
     {
       path: "/login",
